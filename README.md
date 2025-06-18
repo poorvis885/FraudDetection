@@ -18,7 +18,7 @@ Database: Python-based SQL insertion script
 CLI Menu-based user interface
 
 **Installation Guide**
-Clone repo: git clone https://github.com/yourusername/fraudshield-dsa.git
+Clone repo: git clone (https://github.com/poorvis885/FraudDetection)
 Compile: g++ fraudshield.cpp -o fraudshield
 Run: ./fraudshield
 Ensure transactions.csv exists with header or use option 1 to add entries.
