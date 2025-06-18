@@ -1,94 +1,45 @@
-💻 Financial Fraud Detection System
-(C++ | Data Structures & Algorithms Project)
-📝 Description
-A high-performance financial fraud detection system built using C++ and efficient Data Structures & Algorithms (DSA).
-The system analyzes large volumes of transaction data to identify patterns of fraudulent activity, including:
+**FraudShield++** : Financial Fraud Detection System (C++ DSA Project)
 
-Identity theft
+**Overview**
+A C++ & DSA-based system to detect suspicious financial transactions, fraud rings, and card cloning. Uses Trie & Graph algorithms to analyze transaction patterns.
 
-Payment fraud
+**Features**
+Suspicious transaction detection based on amount thresholds.
+Fraud ring detection using DFS in transaction graph.
+Card cloning detection using Trie data structure.
+Real-time transaction monitoring with CSV and SQL logging.
+Interactive CLI with transaction history and alerts.
 
-Unauthorized transactions
+**Technologies Used**
+Language: C++ (DSA concepts)
+Data Structures: Trie, Graph (DFS), Vector, HashMap
+External: CSV parsing, system call to Python-SQL connector
+Database: Python-based SQL insertion script
+CLI Menu-based user interface
 
-Suspicious behavioral patterns
+**Installation Guide**
+Clone repo: git clone https://github.com/yourusername/fraudshield-dsa.git
+Compile: g++ fraudshield.cpp -o fraudshield
+Run: ./fraudshield
+Ensure transactions.csv exists with header or use option 1 to add entries.
+Ensure insert_to_sql.py exists to sync with database (optional).
 
-Optimized for real-time detection, this system is suitable for integration into financial institutions or digital payment platforms.
+**How to Use**
+Run FraudShield++.
+Add new transactions via CLI.
+View suspicious transactions.
+Detect fraud rings.
+Check manual card cloning.
+View all transaction history.
 
-🚀 Key Features
-✅ Real-time transaction monitoring
-✅ Detection of suspicious patterns (velocity checks, frequency spikes)
-✅ Blacklisted account verification
-✅ Anomaly detection using advanced DSA techniques
-✅ Graph-based fraud ring detection (cycle detection)
-✅ Efficient search and pattern matching
-✅ Command-line interface for demonstration & testing
+**Future Enhancements**
+Add ML-based anomaly detection.
+Implement REST API for real-time integration.
+Add user authentication for system access.
+GUI-based dashboard (Qt / Electron).
 
-⚙️ Tech Stack
-Language: C++17
+**License**
+MIT License. This project is the intellectual property of Poorvi Shrivastava.
 
-Core Concepts Used:
+🔗 **Connect with me**: https://www.linkedin.com/in/poorvi-shrivastava-4a34a9256/
 
-Hash Maps
-
-Min/Max Heaps
-
-Graph Algorithms (DFS for cycle detection)
-
-Sliding Window Algorithms
-
-Dynamic Programming
-
-CSV File Parsing
-
-OOP Design Principles
-
-🗂️ Project Structure
-css
-Copy
-Edit
-/financial-fraud-detection
-├── src/
-│   ├── main.cpp
-│   ├── FraudDetector.cpp
-│   ├── FraudDetector.h
-├── data/
-│   ├── transactions.csv
-├── README.md
-├── Makefile
-└── LICENSE
-⚡ How to Run
-1️⃣ Clone the repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/financial-fraud-detection.git
-2️⃣ Compile the project:
-
-bash
-Copy
-Edit
-g++ src/*.cpp -o fraud_detection
-3️⃣ Run the executable:
-
-bash
-Copy
-Edit
-./fraud_detection
-📊 Sample Workflow
-1️⃣ Load transaction data from CSV
-2️⃣ Analyze data using HashMaps, Heaps, and Graphs
-3️⃣ Apply threshold checks & anomaly detection
-4️⃣ Generate alerts for suspicious activity
-5️⃣ Log results to console or output file
-
-💡 Future Enhancements
-Integrate Machine Learning (Unsupervised models) for smarter detection
-
-REST API development for integration with fintech platforms
-
-Real-time visualization dashboards
-
-Database integration (MySQL / PostgreSQL)
-
-Full GUI (using Qt or Electron)
